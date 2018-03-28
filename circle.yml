@@ -1,9 +1,9 @@
 machine:
   services:
-    -docker
+    - docker
   dependencies:
     override:
-      -docker build -t platzi:DevOps .
+      - docker build -t platzi:DevOps .
     test:
      override:
-      -docker run platzi:DevOps npm test
+      - docker run platzi:DevOps npm test
